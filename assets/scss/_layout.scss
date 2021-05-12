@@ -1,3 +1,9 @@
 .general-container {
     display: flex;
+    > nav.sidebar {
+        flex-basis: 20%;
+    }
+    > main {
+        flex-grow: 1;
+    }
 }

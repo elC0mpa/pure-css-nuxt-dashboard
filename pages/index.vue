@@ -1,7 +1,7 @@
 <template>
-<div>
+<main class="dashboard">
   HOLA MUNDO
-</div>
+</main>
 </template>
 
 <script>

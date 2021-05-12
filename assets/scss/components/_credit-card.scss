@@ -1,0 +1,41 @@
+.credit-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: linear-gradient(
+    to left bottom,
+    rgba($gradient-primary, 0.795),
+    rgba($gradient-secondary, 0.795)
+  );
+  border-radius: 1rem;
+  min-height: 160px;
+  padding: 5px;
+  &__title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+  }
+  &__info {
+    font-size: 0.5rem;
+    color: white;
+  }
+  &__number {
+    display: flex;
+    justify-content: center;
+    color: white;
+    > ul {
+      list-style: none;
+      display: flex;
+      > li:not(:last-child) {
+        margin-right: 5px;
+        content: "****";
+      }
+    }
+  }
+  &__footer {
+    display: flex;
+    > div:last-child {
+      margin-left: 10px;
+    }
+  }
+}

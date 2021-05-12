@@ -8,6 +8,7 @@
 @import "components/card";
 @import "components/header";
 @import "components/side-bar";
+@import "components/credit-card";
 
 @import "general";
 @import "animations";
@@ -15,7 +16,4 @@
 @import "typography";
 @import "layout";
 
-// @import "sections/header";
-// @import "sections/about";
-// @import "sections/features";
-// @import "sections/favorites";
+@import "sections/dashboard.scss";

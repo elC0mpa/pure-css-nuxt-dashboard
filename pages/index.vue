@@ -1,15 +1,12 @@
 <template>
-<main class="dashboard">
-  HOLA MUNDO
-</main>
+<dashboard></dashboard>
 </template>
 
 <script>
-import HeaderComponent from "@/components/Header";
-import SideBar from "@/components/SideBar";
+import Dashboard from "@/components/Dashboard";
 export default {
   components: {
-    HeaderComponent, SideBar
+    Dashboard
   }
 }
 </script>

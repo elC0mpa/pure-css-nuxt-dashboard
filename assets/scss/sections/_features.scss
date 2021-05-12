@@ -1,0 +1,17 @@
+section.features-section {
+    margin-top: -20rem;
+    transform: skewY(-4deg);
+    padding: 20rem 0;
+    background-image: linear-gradient(
+      to left bottom,
+      rgba($gradient-primary, 0.795),
+      rgba($gradient-secondary, 0.795)
+    ),
+    url("./../../../assets/bitcoin.jpg");
+    background-size: cover;
+    background-position: center;
+
+    & > * {
+      transform: skewY(4deg);
+    }
+}

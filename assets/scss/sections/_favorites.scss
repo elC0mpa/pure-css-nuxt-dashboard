@@ -1,0 +1,14 @@
+section.favorites-section {
+    margin-top: -10rem;
+    padding: 20rem 0;
+    background-color: $about-section-background-color;;
+    > div.u-center-text {
+        > h2.secondary-heading {
+          @include secondary-heading;
+          &:hover {
+            transform: skewY(2deg) skewX(15deg) scale(1.1);
+            text-shadow: 0.4rem 1rem 2rem rgba($color: #000000, $alpha: 0.2);
+          }
+        }
+      }
+}

@@ -91,3 +91,5 @@ sw.*
 
 # nvm config file
 .nvmrc
+
+nuxt-dist

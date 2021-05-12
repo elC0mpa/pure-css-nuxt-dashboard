@@ -13,6 +13,7 @@
     "nuxt": "^2.15.3"
   },
   "devDependencies": {
+    "@nuxtjs/svg": "^0.1.12",
     "fibers": "^5.0.0",
     "sass": "^1.32.12",
     "sass-loader": "^10.2.0"

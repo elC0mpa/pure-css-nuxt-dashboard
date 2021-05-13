@@ -5,16 +5,21 @@
       <credit-card></credit-card>
       <balances></balances>
     </div>
+    <div class="cards-section__bottom-container">
+      <progress-bar></progress-bar>
+    </div>
   </section>
 </template>
 
 <script>
 import CreditCard from "@/components/CreditCard";
 import Balances from "@/components/Balances"
+import ProgressBar from "@/components/ProgressBar"
 export default {
   components: {
     CreditCard,
-    Balances
+    Balances,
+    ProgressBar
   },
 };
 </script>

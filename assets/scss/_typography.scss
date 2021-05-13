@@ -29,6 +29,16 @@
   font-size: 0.8rem;
 }
 
+.is-bold {
+  font-weight: bold;
+}
+
+.is-currency {
+  &::before {
+    content: '$';
+  }
+}
+
 .current-balance-typo {
   font-size: 1.5rem;
   color: blue;

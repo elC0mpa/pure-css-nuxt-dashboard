@@ -55,9 +55,6 @@
   &__info-container {
       display: flex;
       justify-content: space-between;
-      &--text, &--status {
-          font-size: .8rem;
-      }
       &--status {
           font-weight: bold;
       }

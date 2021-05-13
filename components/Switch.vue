@@ -1,8 +1,11 @@
 <template>
-  <label class="switch">
-    <input v-model="value" type="checkbox" />
-    <span class="slider"></span>
-  </label>
+  <div class="switch-container">
+    <label class="switch-container__switch">
+      <input v-model="value" type="checkbox" />
+      <span class="slider"></span>
+    </label>
+    <p class="switch-container__info">Deactivate card</p>
+  </div>
 </template>
 
 <script>

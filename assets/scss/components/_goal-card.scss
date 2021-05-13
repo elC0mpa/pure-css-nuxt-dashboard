@@ -1,0 +1,19 @@
+.goal-card {
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include card;
+    @include card-hover;
+    &__top-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        &--balance {
+            font-weight: bold;
+        }
+        &--date {
+            font-size: .9rem;
+        }
+    }
+}

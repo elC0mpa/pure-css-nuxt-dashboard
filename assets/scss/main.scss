@@ -2,13 +2,13 @@
 @import "utilities";
 @import "mixins";
 
-@import "components/images-group";
 @import "components/buttons";
 @import "components/feature-box";
 @import "components/card";
 @import "components/header";
 @import "components/side-bar";
 @import "components/credit-card";
+@import "components/balances";
 
 @import "general";
 @import "animations";
@@ -17,3 +17,4 @@
 @import "layout";
 
 @import "sections/dashboard.scss";
+@import "sections/cards-section";

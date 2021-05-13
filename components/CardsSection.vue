@@ -6,7 +6,10 @@
       <balances></balances>
     </div>
     <div class="cards-section__bottom-container">
-      <progress-bar></progress-bar>
+      <progress-bar
+        low-left-text="Weekly payment limit"
+        low-right-text="$350.60 / $4000"
+      ></progress-bar>
       <switch-component></switch-component>
     </div>
   </section>
@@ -14,16 +17,16 @@
 
 <script>
 import CreditCard from "@/components/CreditCard";
-import Balances from "@/components/Balances"
-import ProgressBar from "@/components/ProgressBar"
-import SwitchComponent from "@/components/Switch"
+import Balances from "@/components/Balances";
+import ProgressBar from "@/components/ProgressBar";
+import SwitchComponent from "@/components/Switch";
 export default {
-  name: 'CardsSection',
+  name: "CardsSection",
   components: {
     CreditCard,
     Balances,
     ProgressBar,
-    SwitchComponent
+    SwitchComponent,
   },
 };
 </script>

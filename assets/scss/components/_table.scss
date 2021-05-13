@@ -1,8 +1,19 @@
 .table {
   width: 100%;
   th,
-  tr {
-    border-bottom: 1px solid black;
+  td {
+    border-bottom: 1px solid lightgray;
     border-collapse: collapse;
+  }
+  > tr > th:last-child {
+    text-align: right;
+    font-weight: normal;
+  }
+  > tr > th:not(:last-child) {
+    text-align: left;
+    font-weight: normal;
+  }
+  > tr > td:last-child {
+    text-align: right;
   }
 }

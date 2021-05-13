@@ -1,38 +1,51 @@
 <template>
   <table class="table">
     <tr>
-      <th>Receiver</th>
-      <th>Type</th>
-      <th>Date</th>
-      <th>Amount</th>
+      <th class="secondary-info">Receiver</th>
+      <th class="secondary-info">Type</th>
+      <th class="secondary-info">Date</th>
+      <th class="secondary-info text-align-right">Amount</th>
     </tr>
-    <tr>
-      <td>Tesco Market</td>
-      <td>Shopping</td>
-      <td>13 DEC 2020</td>
-      <td>$75.67</td>
-    </tr>
-    <tr>
-      <td>Tesco Market</td>
-      <td>Shopping</td>
-      <td>13 DEC 2020</td>
-      <td>$75.67</td>
-    </tr>
-    <tr>
-      <td>Tesco Market</td>
-      <td>Shopping</td>
-      <td>13 DEC 2020</td>
-      <td>$75.67</td>
-    </tr>
-    <tr>
-      <td>Tesco Market</td>
-      <td>Shopping</td>
-      <td>13 DEC 2020</td>
-      <td>$75.67</td>
+    <tr v-for="(transaction, index) in transactions" :key="index">
+      <td class="secondary-info is-bold">{{ transaction.receiver }}</td>
+      <td class="secondary-info">{{ transaction.type }}</td>
+      <td class="secondary-info">{{ transaction.date }}</td>
+      <td class="secondary-info is-bold is-currency text-align-right">{{ transaction.amount }}</td>
     </tr>
   </table>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      transactions: [
+        {
+          receiver: "Tesco Market",
+          type: "Shopping",
+          date: "13 Dec 2020",
+          amount: "57.64",
+        },
+        {
+          receiver: "Tesco Market",
+          type: "Shopping",
+          date: "13 Dec 2020",
+          amount: "57.64",
+        },
+        {
+          receiver: "Tesco Market",
+          type: "Shopping",
+          date: "13 Dec 2020",
+          amount: "57.64",
+        },
+        {
+          receiver: "Tesco Market",
+          type: "Shopping",
+          date: "13 Dec 2020",
+          amount: "57.64",
+        },
+      ],
+    };
+  },
+};
 </script>

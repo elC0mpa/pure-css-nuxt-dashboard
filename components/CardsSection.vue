@@ -7,6 +7,7 @@
     </div>
     <div class="cards-section__bottom-container">
       <progress-bar></progress-bar>
+      <switch-component></switch-component>
     </div>
   </section>
 </template>
@@ -15,11 +16,13 @@
 import CreditCard from "@/components/CreditCard";
 import Balances from "@/components/Balances"
 import ProgressBar from "@/components/ProgressBar"
+import SwitchComponent from "@/components/Switch"
 export default {
   components: {
     CreditCard,
     Balances,
-    ProgressBar
+    ProgressBar,
+    SwitchComponent
   },
 };
 </script>

@@ -1,4 +1,6 @@
 .cards-section {
+    @include card;
+    @include card-hover;
     &__top-container {
         display: flex;
         > div.credit-card {

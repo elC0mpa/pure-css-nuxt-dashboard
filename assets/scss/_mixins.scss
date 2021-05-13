@@ -15,3 +15,17 @@
     }
   }
 }
+
+@mixin card {
+  border: 1px solid rgba(211, 211, 211, 0.301);
+  padding: 10px;
+  border-radius: 2rem;
+  transition: all .5s;
+}
+
+@mixin card-hover {
+  &:hover {
+    box-shadow: 0 .5rem .9rem .1rem rgba(211, 211, 211, 0.301);
+    transform: translateY(-.1rem);
+  }
+}

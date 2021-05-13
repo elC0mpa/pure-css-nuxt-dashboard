@@ -5,7 +5,7 @@
       <transaction-history-section></transaction-history-section>
     </div>
     <div class="dashboard__second-column">
-      Second Column
+      <goals-section></goals-section>
     </div>
   </main>
 </template>
@@ -13,10 +13,12 @@
 <script>
 import CardsSection from "@/components/CardsSection";
 import TransactionHistorySection from "@/components/TransactionHistorySection";
+import GoalsSection from "@/components/GoalsSection";
 export default {
   components: {
     CardsSection,
     TransactionHistorySection,
+    GoalsSection
   },
 };
 </script>

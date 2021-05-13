@@ -1,0 +1,18 @@
+.balances {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  > div > p{
+    text-align: right;
+  }
+  > div > p:first-child::before{
+    content: "$";
+    font-size: 1rem;
+    margin-right: 4px;
+  }
+  &__info {
+    font-size: 0.7rem;
+    letter-spacing: 0.05rem;
+  }
+}

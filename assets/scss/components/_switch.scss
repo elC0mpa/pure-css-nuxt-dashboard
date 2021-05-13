@@ -1,7 +1,7 @@
 .switch {
   position: relative;
   display: inline-block;
-  width: 45px;
+  width: 40px;
   height: 20px;
   > input {
     width: 0;
@@ -11,9 +11,9 @@
       background-color: #2196f3;
     }
     &:checked + .slider::before {
-      -webkit-transform: translateX(22px);
-      -ms-transform: translateX(22px);
-      transform: translateX(22px);
+      -webkit-transform: translateX(18px);
+      -ms-transform: translateX(18px);
+      transform: translateX(18px);
     }
     &:focus + .slider {
       box-shadow: 0 0 1px #2196f3;
@@ -33,7 +33,7 @@
     &::before {
       position: absolute;
       content: "";
-      height: 10px;
+      height: 12px;
       width: 16px;
       left: 4px;
       bottom: 4px;

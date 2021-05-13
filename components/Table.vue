@@ -17,6 +17,7 @@
 
 <script>
 export default {
+  name: 'Table',
   data() {
     return {
       transactions: [

@@ -14,6 +14,7 @@
 <script>
 import Graph from "@/assets/icons/area-graph.svg?raw";
 export default {
+  name: 'GoalCard',
   data() {
     return {
       Graph,

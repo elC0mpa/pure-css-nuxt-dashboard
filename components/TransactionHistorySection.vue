@@ -8,6 +8,7 @@
 <script>
 import TableComponent from "@/components/Table";
 export default {
+  name: 'TransactionHistorySection',
   components: {
     TableComponent
   }

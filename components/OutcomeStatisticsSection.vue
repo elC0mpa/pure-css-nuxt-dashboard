@@ -7,6 +7,7 @@
 <script>
 import GoalCard from "@/components/GoalCard";
 export default {
+  name: "OutcomeStatisticsSection",
   components: {
     GoalCard,
   },

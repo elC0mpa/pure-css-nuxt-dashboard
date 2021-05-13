@@ -15,6 +15,7 @@
 <script>
 import GoalCard from "@/components/GoalCard";
 export default {
+  name: 'GoalsSection',
   components: {
     GoalCard
   }

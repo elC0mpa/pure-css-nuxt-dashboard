@@ -18,6 +18,7 @@ import Balances from "@/components/Balances"
 import ProgressBar from "@/components/ProgressBar"
 import SwitchComponent from "@/components/Switch"
 export default {
+  name: 'CardsSection',
   components: {
     CreditCard,
     Balances,

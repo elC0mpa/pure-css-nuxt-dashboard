@@ -17,6 +17,7 @@ import TransactionHistorySection from "@/components/TransactionHistorySection";
 import GoalsSection from "@/components/GoalsSection";
 import OutcomeStatisticsSection from "@/components/OutcomeStatisticsSection"
 export default {
+  name: 'Dashboard',
   components: {
     CardsSection,
     TransactionHistorySection,

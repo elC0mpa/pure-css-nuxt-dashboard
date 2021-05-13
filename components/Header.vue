@@ -26,9 +26,7 @@
 import Notifications from "@/assets/icons/bell.svg?raw";
 import Message from "@/assets/icons/mail.svg?raw";
 export default {
-  // components: {
-  //   Notifications
-  // }
+  name: 'Header',
   data() {
     return {
       Notifications,

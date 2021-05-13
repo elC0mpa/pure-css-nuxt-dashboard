@@ -1,3 +1,35 @@
 .outcome-statistics-section {
-    padding-left: 10px;
+  padding-left: 10px;
+  &__progress-bar-container {
+    &:not(:last-child) {
+      margin-bottom: 1px;
+    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &--icon {
+      width: 35px;
+      align-self: stretch;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      background-color: rgb(122, 135, 253);
+      fill: blue;
+    }
+    &--bar {
+      flex-grow: 1;
+    }
+    > *:not(:last-child) {
+      margin-right: 0.5rem;
+    }
+  }
+  .orange-box-icon {
+    background-color: rgb(255, 155, 118);
+    fill: orangered;
+  }
+  .green-box-icon {
+    background-color: rgb(178, 253, 159);
+    fill: green;
+  }
 }

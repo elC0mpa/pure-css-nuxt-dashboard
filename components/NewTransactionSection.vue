@@ -17,11 +17,15 @@
         }}</span>
       </div>
       <div class="new-transaction-section__button-wrapper">
-        <button class="infinite-button">+</button>
+        <button class="infinite-button add-button">+</button>
         <span class="new-transaction-section__user-name secondary-info">
           Add new</span
         >
       </div>
+    </div>
+    <div class="new-transaction-section__actions-container">
+      <input class="new-transaction-section__number-input" type="text"/>
+      <button class="infinite-button secondary-info">Send the transfer</button>
     </div>
   </section>
 </template>

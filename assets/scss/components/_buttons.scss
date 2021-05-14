@@ -25,12 +25,15 @@
 .infinite-button {
   background-color: rgba(250, 189, 36, 0.856);
   border: none;
-  border-radius: 25px;
-  width: 20px;
-  height: 20px;
-  margin-left: 5px;
   cursor: pointer;
   &:hover {
     animation: infinite-pulsation 1s infinite;
   }
+}
+
+.add-button {
+  width: 20px;
+  height: 20px;
+  border-radius: 25px;
+  margin-left: 5px;
 }

@@ -2,7 +2,7 @@
   <section class="goals-section">
     <div class="goals-section__title-container">
       <p class="card-title">Goals</p>
-      <button class="infinite-button">+</button>
+      <button class="infinite-button add-button">+</button>
     </div>
     <div class="goals-section__cards-container">
       <goal-card

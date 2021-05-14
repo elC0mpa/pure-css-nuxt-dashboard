@@ -2,7 +2,7 @@
   <div>
     <div class="progress-bar">
       <span
-        style="width: 25%"
+        :style="widthProgress"
         :class="{
           'is-green': color === 'green',
           'is-orange': color === 'orange',
@@ -39,6 +39,15 @@ export default {
       type: String,
       default: "",
     },
+    width: {
+      type: Number,
+      default: 0,
+    }
   },
+  computed: {
+    widthProgress() {
+      return "width: " + this.width + "%";
+    }
+  }
 };
 </script>

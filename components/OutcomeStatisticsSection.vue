@@ -16,6 +16,7 @@
         :low-left-text="progressBar.progressBarText"
         low-right-text=""
         :color="progressBar.progressBarColor"
+        :width="progressBar.width"
       ></progress-bar>
       <p
         class="outcome-statistics-section__progress-bar-container--percent is-percent"
@@ -51,7 +52,7 @@ export default {
         },
         {
           icon: Aircraft,
-          width: 25,
+          width: 40,
           iconClass: "",
           progressBarColor: "",
           progressBarText: "Travels",

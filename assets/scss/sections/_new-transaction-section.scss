@@ -20,11 +20,26 @@
     justify-content: center;
     flex: 0 0 16%;
     > * {
-        margin-top: auto;
+      margin-top: auto;
     }
   }
   &__user-photo {
     height: 3rem;
     border-radius: 50%;
+  }
+  &__actions-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+  &__number-input {
+    border: 1.8px solid transparentize($color: blue, $amount: 0.7);
+    height: 30px;
+    border-radius: 0.5rem;
+    &:focus {
+      outline: none;
+      border: 1.8px solid transparentize($color: blue, $amount: 0.3);
+    }
   }
 }

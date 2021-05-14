@@ -20,6 +20,10 @@
     &--bar {
       flex-grow: 1;
     }
+    &--percent {
+      align-self: flex-start;
+      font-weight: bold;
+    }
     > *:not(:last-child) {
       margin-right: 0.5rem;
     }

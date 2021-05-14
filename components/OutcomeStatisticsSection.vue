@@ -1,40 +1,27 @@
 <template>
   <section class="outcome-statistics-section">
     <p class="card-title">Outcome statistics</p>
-    <div class="outcome-statistics-section__progress-bar-container">
-      <div
-        class="outcome-statistics-section__progress-bar-container--icon orange-box-icon"
-        v-html="Cart"
-      ></div>
-      <progress-bar
-        class="outcome-statistics-section__progress-bar-container--bar"
-        low-left-text="Shopping"
-        low-right-text=""
-        color="orange"
-      ></progress-bar>
-    </div>
-    <div class="outcome-statistics-section__progress-bar-container">
-      <div
-        class="outcome-statistics-section__progress-bar-container--icon green-box-icon"
-        v-html="Controller"
-      ></div>
-      <progress-bar
-        class="outcome-statistics-section__progress-bar-container--bar"
-        low-left-text="Electronics"
-        low-right-text=""
-        color="green"
-      ></progress-bar>
-    </div>
-    <div class="outcome-statistics-section__progress-bar-container">
+    <div
+      v-for="(progressBar, index) in progressBars"
+      :key="index"
+      class="outcome-statistics-section__progress-bar-container"
+    >
       <div
         class="outcome-statistics-section__progress-bar-container--icon"
-        v-html="Aircraft"
+        :class="progressBar.iconClass"
+        v-html="progressBar.icon"
       ></div>
       <progress-bar
         class="outcome-statistics-section__progress-bar-container--bar"
-        low-left-text="Travel"
+        :low-left-text="progressBar.progressBarText"
         low-right-text=""
+        :color="progressBar.progressBarColor"
       ></progress-bar>
+      <p
+        class="outcome-statistics-section__progress-bar-container--percent is-percent"
+      >
+        {{ progressBar.width }}
+      </p>
     </div>
   </section>
 </template>
@@ -47,9 +34,29 @@ export default {
   name: "OutcomeStatisticsSection",
   data() {
     return {
-      Cart,
-      Controller,
-      Aircraft,
+      progressBars: [
+        {
+          icon: Cart,
+          width: 50,
+          iconClass: "orange-box-icon",
+          progressBarColor: "orange",
+          progressBarText: "Shopping",
+        },
+        {
+          icon: Controller,
+          width: 25,
+          iconClass: "green-box-icon",
+          progressBarColor: "green",
+          progressBarText: "Electronics",
+        },
+        {
+          icon: Aircraft,
+          width: 25,
+          iconClass: "",
+          progressBarColor: "",
+          progressBarText: "Travels",
+        },
+      ],
     };
   },
 };

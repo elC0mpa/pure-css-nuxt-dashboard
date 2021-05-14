@@ -7,6 +7,7 @@
     <div class="dashboard__second-column">
       <goals-section></goals-section>
       <outcome-statistics-section></outcome-statistics-section>
+      <new-transaction-section></new-transaction-section>
     </div>
   </main>
 </template>
@@ -16,13 +17,15 @@ import CardsSection from "@/components/CardsSection";
 import TransactionHistorySection from "@/components/TransactionHistorySection";
 import GoalsSection from "@/components/GoalsSection";
 import OutcomeStatisticsSection from "@/components/OutcomeStatisticsSection"
+import NewTransactionSection from "@/components/NewTransactionSection"
 export default {
   name: 'Dashboard',
   components: {
     CardsSection,
     TransactionHistorySection,
     GoalsSection,
-    OutcomeStatisticsSection
+    OutcomeStatisticsSection,
+    NewTransactionSection
   },
 };
 </script>

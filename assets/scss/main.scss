@@ -13,11 +13,13 @@
 @import "components/switch";
 @import "components/table";
 @import "components/goal-card";
+
 @import "sections/dashboard.scss";
 @import "sections/cards-section";
 @import "sections/transaction-history-section";
 @import "sections/goals-section";
 @import "sections/outcome-statistics-section";
+@import "sections/new-transaction-section";
 
 @import "general";
 @import "animations";

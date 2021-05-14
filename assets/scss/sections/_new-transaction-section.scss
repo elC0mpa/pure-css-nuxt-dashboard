@@ -1,0 +1,30 @@
+.new-transaction-section {
+  padding-left: 10px;
+  &__avatars-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+  &__avatar-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 16%;
+  }
+  &__button-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 16%;
+    > * {
+        margin-top: auto;
+    }
+  }
+  &__user-photo {
+    height: 3rem;
+    border-radius: 50%;
+  }
+}

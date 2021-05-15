@@ -1,5 +1,6 @@
 .new-transaction-section {
-  padding-left: 10px;
+  @include card;
+  @include card-hover;
   &__avatars-container {
     display: flex;
     justify-content: flex-start;
@@ -32,6 +33,10 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     align-items: stretch;
+    > button {
+      border-radius: 15px;
+      padding: 0 7px;
+    }
   }
   &__number-input {
     border: 1.8px solid transparentize($color: blue, $amount: 0.7);

@@ -25,7 +25,7 @@
     </div>
     <div class="new-transaction-section__actions-container">
       <input class="new-transaction-section__number-input" type="text"/>
-      <button class="infinite-button secondary-info">Send the transfer</button>
+      <button class="infinite-button secondary-info">Send the transfer ></button>
     </div>
   </section>
 </template>

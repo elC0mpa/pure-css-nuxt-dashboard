@@ -1,6 +1,5 @@
 .new-transaction-section {
   @include card;
-  @include card-hover;
   &__avatars-container {
     display: flex;
     justify-content: space-between;

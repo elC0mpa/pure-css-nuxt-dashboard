@@ -20,12 +20,9 @@
   border: 1px solid rgba(211, 211, 211, 0.301);
   padding: 10px;
   border-radius: 2rem;
-  transition: all .5s;
-}
-
-@mixin card-hover {
+  transition: all 0.5s;
   &:hover {
-    box-shadow: 0 .5rem .9rem .1rem rgba(211, 211, 211, 0.301);
-    transform: translateY(-.1rem);
+    box-shadow: 0 0.5rem 0.9rem 0.1rem rgba(211, 211, 211, 0.301);
+    transform: translateY(-0.1rem);
   }
 }

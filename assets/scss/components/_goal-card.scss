@@ -4,7 +4,6 @@
     flex-direction: column;
     justify-content: space-between;
     @include card;
-    @include card-hover;
     &__top-container {
         display: flex;
         flex-direction: column;

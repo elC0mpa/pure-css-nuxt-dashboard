@@ -12,7 +12,7 @@
     }
   }
   @if $breakpoint == small-bp {
-    @media (max-width: 655px) {
+    @media (max-width: 670px) {
       @content;
     }
   }

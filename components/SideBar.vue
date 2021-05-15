@@ -1,10 +1,14 @@
 <template>
   <nav class="sidebar">
     <ul class="side-nav">
-      <li class="side-nav__item side-nav__item--active">
+      <li
+        v-for="(item, index) in items"
+        :key="index"
+        class="side-nav__item side-nav__item--active"
+      >
         <a href="#" class="side-nav__link">
-          <div class="side-nav__icon" v-html="Graph"></div>
-          <span>Overview</span>
+          <div class="side-nav__icon" v-html="item.icon"></div>
+          <span>{{ item.text }}</span>
         </a>
       </li>
     </ul>
@@ -16,13 +20,13 @@
 </template>
 
 <script>
-import Graph from "@/assets/icons/area-graph.svg?raw";
 import Message from "@/assets/icons/mail.svg?raw";
 export default {
-  data() {
-    return {
-      Graph,
-    };
+  props: {
+    items: {
+      type: Array,
+      required: true,
+    },
   },
 };
 </script>

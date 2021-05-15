@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import GoalCard from "@/components/GoalCard";
+import GoalCard from "@/components/GoalsSection/GoalCard";
 import Signal from "@/assets/icons/signal.svg?raw";
 import Brush from "@/assets/icons/round-brush.svg?raw";
 import Controller from "@/assets/icons/game-controller.svg?raw";

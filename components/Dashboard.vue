@@ -15,17 +15,17 @@
 <script>
 import CardsSection from "@/components/CardsSection/index";
 import TransactionHistorySection from "@/components/TransactionHistorySection/index";
-import GoalsSection from "@/components/GoalsSection";
-import OutcomeStatisticsSection from "@/components/OutcomeStatisticsSection"
-import NewTransactionSection from "@/components/NewTransactionSection"
+import GoalsSection from "@/components/GoalsSection/index";
+import OutcomeStatisticsSection from "@/components/OutcomeStatisticsSection/index";
+import NewTransactionSection from "@/components/NewTransactionSection/index";
 export default {
-  name: 'Dashboard',
+  name: "Dashboard",
   components: {
     CardsSection,
     TransactionHistorySection,
     GoalsSection,
     OutcomeStatisticsSection,
-    NewTransactionSection
+    NewTransactionSection,
   },
 };
 </script>

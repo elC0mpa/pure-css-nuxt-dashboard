@@ -1,6 +1,9 @@
 .dashboard {
   display: flex;
   padding: 5px;
+  @include responsive(medium-bp) {
+    flex-direction: column;
+  }
   &__first-column {
     flex: 0 0 50%;
     margin-right: 0.5rem;
@@ -8,6 +11,9 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+    }
+    @include responsive(medium-bp) {
+      margin-right: 0;
     }
   }
   &__second-column {

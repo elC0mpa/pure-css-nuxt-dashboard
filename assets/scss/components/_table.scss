@@ -1,9 +1,11 @@
 .table {
   width: 100%;
+  border-collapse: collapse;
   th,
   td {
     border-bottom: 1px solid lightgray;
     border-collapse: collapse;
+    padding: 5px 0;
   }
   > tr > th:last-child {
     text-align: right;

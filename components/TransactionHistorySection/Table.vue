@@ -10,43 +10,21 @@
       <td class="secondary-info is-bold">{{ transaction.receiver }}</td>
       <td class="secondary-info">{{ transaction.type }}</td>
       <td class="secondary-info">{{ transaction.date }}</td>
-      <td class="secondary-info is-bold is-currency text-align-right">{{ transaction.amount }}</td>
+      <td class="secondary-info is-bold is-currency text-align-right">
+        {{ transaction.amount }}
+      </td>
     </tr>
   </table>
 </template>
 
 <script>
 export default {
-  name: 'Table',
-  data() {
-    return {
-      transactions: [
-        {
-          receiver: "Tesco Market",
-          type: "Shopping",
-          date: "13 Dec 2020",
-          amount: "57.64",
-        },
-        {
-          receiver: "Tesco Market",
-          type: "Shopping",
-          date: "13 Dec 2020",
-          amount: "57.64",
-        },
-        {
-          receiver: "Tesco Market",
-          type: "Shopping",
-          date: "13 Dec 2020",
-          amount: "57.64",
-        },
-        {
-          receiver: "Tesco Market",
-          type: "Shopping",
-          date: "13 Dec 2020",
-          amount: "57.64",
-        },
-      ],
-    };
+  name: "Table",
+  props: {
+    transactions: {
+      type: Array,
+      required: true,
+    },
   },
 };
 </script>

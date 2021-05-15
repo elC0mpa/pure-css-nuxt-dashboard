@@ -6,8 +6,8 @@
 // width <= 600 px: mobile
 
 @mixin responsive($breakpoint) {
-  @if $breakpoint == phone {
-    @media (max-width: 600px) {
+  @if $breakpoint == smallest-bp {
+    @media (max-width: 440px) {
       @content;
     }
   }

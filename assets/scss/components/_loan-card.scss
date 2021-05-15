@@ -15,4 +15,8 @@
   > p {
     color: white;
   }
+  @include responsive(smallest-bp) {
+    align-items: center;
+    margin-top: 5px;
+  }
 }

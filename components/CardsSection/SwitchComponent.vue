@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: "SwitchInput",
+  name: "SwitchComponent",
   data() {
     return {
       value: false,

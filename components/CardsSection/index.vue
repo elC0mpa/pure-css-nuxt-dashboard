@@ -19,7 +19,7 @@
 import CreditCard from "@/components/CardsSection/CreditCard";
 import Balances from "@/components/CardsSection/Balances";
 import ProgressBar from "@/components/ProgressBar";
-import SwitchComponent from "@/components/CardsSection/Switch";
+import SwitchComponent from "@/components/CardsSection/SwitchComponent";
 export default {
   name: "CardsSection",
   components: {

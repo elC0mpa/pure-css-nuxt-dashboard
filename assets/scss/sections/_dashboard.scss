@@ -4,6 +4,11 @@
   &__first-column {
     flex: 0 0 50%;
     margin-right: 0.5rem;
+    @include responsive(large-bp) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
   }
   &__second-column {
     flex-grow: 1;

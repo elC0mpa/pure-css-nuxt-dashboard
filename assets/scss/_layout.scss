@@ -6,4 +6,7 @@
     > main {
         flex-grow: 1;
     }
+    @include responsive(large-bp) {
+        flex-direction: column;
+      }
 }

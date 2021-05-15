@@ -6,8 +6,10 @@
 
 .side-nav {
   list-style: none;
-  margin-top: 3.5rem;
-
+  @include responsive(large-bp) {
+    display: flex;
+    flex-direction: row;
+  }
 
   &__item {
     position: relative;
@@ -18,6 +20,9 @@
       @media only screen and (max-width: 900px) {
         margin: 0;
       }
+    }
+    @include responsive(large-bp) {
+      flex-grow: 1;
     }
   }
 
@@ -75,5 +80,11 @@
       width: 1.5rem;
       height: 1.5rem;
     }
+  }
+}
+
+.legal {
+  @include responsive(large-bp) {
+    display: none;
   }
 }

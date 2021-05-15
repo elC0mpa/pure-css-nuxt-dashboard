@@ -16,6 +16,11 @@
       @content;
     }
   }
+  @if $breakpoint == large-bp {
+    @media (max-width: 1050px) {
+      @content;
+    }
+  }
   @if $breakpoint == largest-bp {
     @media (max-width: 1200px) {
       @content;

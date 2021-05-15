@@ -4,8 +4,8 @@
   display: inline-block;
   background-image: linear-gradient(
     to right,
-    $gradient-primary,
-    $gradient-secondary
+    $gradient-primary-light,
+    $gradient-primary-dark
   );
   -webkit-background-clip: text;
   color: transparent;
@@ -14,8 +14,7 @@
 .card-title {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #444;
-  
+  color: $color-card-title;
 }
 
 .info {
@@ -47,11 +46,11 @@
 
 .current-balance-typo {
   font-size: 1.5rem;
-  color: blue;
+  color: $color-primary;
 }
 .income-balance-typo {
-  color: green;
+  color: $color-secondary;
 }
 .outcome-balance-typo {
-  color: red;
+  color: $color-tertiary;
 }

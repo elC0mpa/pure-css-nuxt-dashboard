@@ -36,21 +36,21 @@ export default {
           date: "20/01/2019",
           balance: 50,
           icon: Signal,
-          iconClass: 'is-blue-filled',
+          iconClass: 'is-primary',
         },
         {
           text: "Renovation",
           date: "20/05/2019",
           balance: 200,
           icon: Brush,
-          iconClass: 'is-orange-filled'
+          iconClass: 'is-tertiary'
         },
         {
           text: "XBox",
           date: "20/07/2019",
           balance: 550,
           icon: Controller,
-          iconClass: 'is-green-filled'
+          iconClass: 'is-secondary'
         },
       ],
     };

@@ -1,8 +1,8 @@
 .loan-card {
   background-image: linear-gradient(
     to left bottom,
-    rgba(red, 0.795),
-    rgba(orangered, 0.795)
+    $gradient-tertiary-light,
+    $gradient-tertiary-dark
   );
   margin-left: 1rem;
   display: flex;

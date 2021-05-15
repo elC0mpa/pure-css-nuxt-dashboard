@@ -1,20 +1,26 @@
-.orange-box-icon {
-  background-color: rgb(255, 155, 118);
-  fill: orangered;
-}
-.green-box-icon {
-  background-color: rgb(178, 253, 159);
-  fill: green;
+.tertiary-box-icon {
+  background-color: transparentize($color-tertiary, $amount: 0.8);
+  fill: $color-tertiary;
 }
 
-.is-blue-filled {
-  fill: blue;
+.secondary-box-icon {
+  background-color: transparentize($color-secondary, $amount: 0.8);
+  fill: $color-secondary;
 }
 
-.is-orange-filled {
-  fill: orangered;
+.primary-box-icon {
+  background-color: transparentize($color-primary, $amount: 0.8);
+  fill: $color-primary;
 }
 
-.is-green-filled {
-  fill: green;
+.is-primary {
+  fill: $color-primary;
+}
+
+.is-tertiary {
+  fill: $color-tertiary;
+}
+
+.is-secondary {
+  fill: $color-secondary;
 }

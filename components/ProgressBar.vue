@@ -4,8 +4,9 @@
       <span
         :style="widthProgress"
         :class="{
-          'is-green': color === 'green',
-          'is-orange': color === 'orange',
+          'is-primary': color === 'primary',
+          'is-secondary': color === 'secondary',
+          'is-tertiary': color === 'tertiary',
         }"
       ></span>
     </div>

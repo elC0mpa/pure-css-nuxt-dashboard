@@ -1,7 +1,14 @@
-$gradient-primary: rgb(24, 180, 231);
-$gradient-secondary: rgb(65, 65, 224);
+$gradient-primary-light: rgb(24, 180, 231);
+$gradient-primary-dark: rgb(65, 65, 224);
+$gradient-tertiary-light: #ff4500;
+$gradient-tertiary-dark: #ff0000;
 $grid-width: 90vw;
 $vertical-space: 16rem;
 $horizontal-space: 12rem;
 $about-section-background-color: rgba(211, 211, 211, 0.199);
-$color-primary: rgb(65, 65, 224);
+
+//COLORS
+$color-primary: blue;
+$color-secondary: green;
+$color-tertiary: orangered;
+$color-card-title: #444;

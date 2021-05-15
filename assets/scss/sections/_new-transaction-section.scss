@@ -3,7 +3,7 @@
   @include card-hover;
   &__avatars-container {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-wrap: wrap;
     align-items: stretch;
   }
@@ -19,7 +19,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex: 0 0 16%;
+    flex-grow: 1;
     > * {
       margin-top: auto;
     }
@@ -42,6 +42,7 @@
     border: 1.8px solid transparentize($color: blue, $amount: 0.7);
     height: 30px;
     border-radius: 0.5rem;
+    margin-right: 5px;
     &:focus {
       outline: none;
       border: 1.8px solid transparentize($color: blue, $amount: 0.3);

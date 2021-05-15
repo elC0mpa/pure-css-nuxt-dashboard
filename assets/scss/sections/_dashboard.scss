@@ -1,11 +1,14 @@
 .dashboard {
+  display: flex;
+  padding: 5px;
+  &__first-column {
+    flex: 0 0 50%;
+    margin-right: 0.5rem;
+  }
+  &__second-column {
+    flex-grow: 1;
+  }
+  &__second-column-horizontal-sections {
     display: flex;
-    padding: 5px;
-    &__first-column {
-        flex: 0 0 50%;
-        margin-right: .5rem;
-    }
-    &__second-column {
-        flex-grow: 1;
-    }
+  }
 }

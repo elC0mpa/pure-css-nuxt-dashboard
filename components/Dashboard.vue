@@ -7,7 +7,10 @@
     <div class="dashboard__second-column">
       <goals-section></goals-section>
       <outcome-statistics-section></outcome-statistics-section>
-      <new-transaction-section></new-transaction-section>
+      <div class="dashboard__second-column-horizontal-sections">
+        <new-transaction-section></new-transaction-section>
+        <div>HOLA MUNDO</div>
+      </div>
     </div>
   </main>
 </template>
@@ -18,6 +21,7 @@ import TransactionHistorySection from "@/components/TransactionHistorySection/in
 import GoalsSection from "@/components/GoalsSection/index";
 import OutcomeStatisticsSection from "@/components/OutcomeStatisticsSection/index";
 import NewTransactionSection from "@/components/NewTransactionSection/index";
+import GoalCard from "@/components/GoalsSection/GoalCard";
 export default {
   name: "Dashboard",
   components: {
@@ -26,6 +30,6 @@ export default {
     GoalsSection,
     OutcomeStatisticsSection,
     NewTransactionSection,
+    GoalCard,
   },
 };
-</script>

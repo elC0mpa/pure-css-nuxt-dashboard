@@ -1,16 +1,23 @@
+// mixin created to manage responsive design
+// desktop first approach
+// width > 1200 px: normal styles
+// width > 900 px: tablet landscape
+// width > 600 px: tablet portrait
+// width <= 600 px: mobile
+
 @mixin responsive($breakpoint) {
   @if $breakpoint == phone {
     @media (max-width: 600px) {
       @content;
     }
   }
-  @if $breakpoint == tab-port {
-    @media (max-width: 900px) {
+  @if $breakpoint == tablet {
+    @media (max-width: 850px) {
       @content;
     }
   }
-  @if $breakpoint == tab-land {
-    @media (max-width: 1200px) {
+  @if $breakpoint == laptop {
+    @media (max-width: 1024px) {
       @content;
     }
   }

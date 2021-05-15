@@ -1,21 +1,21 @@
 .cards-section {
-    @include card;
-    &__top-container {
-        display: flex;
-        > div.credit-card {
-            flex: 0 0 65%;
-        }
-        >div.balances {
-            flex-grow: 1;
-        }
+  @include card;
+  &__top-container {
+    display: flex;
+    > div.credit-card {
+      flex: 0 0 65%;
     }
-    &__bottom-container {
-        display: flex;
-        margin-top: 10px;
-        justify-content: space-between;
-        > div:first-child {
-            flex: 0 0 65%;
-        }
+    > div.balances {
+      flex-grow: 1;
     }
-    margin-bottom: .5rem;
+  }
+  &__bottom-container {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    > div:first-child {
+      flex: 0 0 65%;
+    }
+  }
+  margin-bottom: 0.5rem;
 }

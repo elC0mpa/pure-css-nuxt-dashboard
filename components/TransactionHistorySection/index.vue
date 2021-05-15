@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import TableComponent from "@/components/Table";
+import TableComponent from "@/components/TransactionHistorySection/Table";
 export default {
   name: 'TransactionHistorySection',
   components: {

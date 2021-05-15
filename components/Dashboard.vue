@@ -14,7 +14,7 @@
 
 <script>
 import CardsSection from "@/components/CardsSection/index";
-import TransactionHistorySection from "@/components/TransactionHistorySection";
+import TransactionHistorySection from "@/components/TransactionHistorySection/index";
 import GoalsSection from "@/components/GoalsSection";
 import OutcomeStatisticsSection from "@/components/OutcomeStatisticsSection"
 import NewTransactionSection from "@/components/NewTransactionSection"

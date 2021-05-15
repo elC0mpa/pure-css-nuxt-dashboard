@@ -17,7 +17,7 @@
     }
   }
   @if $breakpoint == largest-bp {
-    @media (max-width: 1230px) {
+    @media (max-width: 1200px) {
       @content;
     }
   }

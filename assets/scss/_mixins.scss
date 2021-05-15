@@ -11,8 +11,8 @@
       @content;
     }
   }
-  @if $breakpoint == tab-portrait {
-    @media (max-width: 900px) {
+  @if $breakpoint == small-bp {
+    @media (max-width: 655px) {
       @content;
     }
   }

@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import CardsSection from "@/components/CardsSection";
+import CardsSection from "@/components/CardsSection/index";
 import TransactionHistorySection from "@/components/TransactionHistorySection";
 import GoalsSection from "@/components/GoalsSection";
 import OutcomeStatisticsSection from "@/components/OutcomeStatisticsSection"

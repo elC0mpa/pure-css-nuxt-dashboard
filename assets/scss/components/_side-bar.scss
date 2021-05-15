@@ -66,6 +66,9 @@
       flex-direction: column;
       padding: 1.5rem 0.5rem;
     }
+    @include responsive(large-bp) {
+      padding: .3rem 2rem;
+    }
   }
 
   &__icon {

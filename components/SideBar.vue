@@ -8,7 +8,7 @@
       >
         <a href="#" class="side-nav__link">
           <div class="side-nav__icon" v-html="item.icon"></div>
-          <span>{{ item.text }}</span>
+          <span class="info">{{ item.text }}</span>
         </a>
       </li>
     </ul>

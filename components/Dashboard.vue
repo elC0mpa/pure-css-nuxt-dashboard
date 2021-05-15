@@ -9,7 +9,7 @@
       <outcome-statistics-section></outcome-statistics-section>
       <div class="dashboard__second-column-horizontal-sections">
         <new-transaction-section></new-transaction-section>
-        <div>HOLA MUNDO</div>
+        <loan-card></loan-card>
       </div>
     </div>
   </main>
@@ -22,6 +22,7 @@ import GoalsSection from "@/components/GoalsSection/index";
 import OutcomeStatisticsSection from "@/components/OutcomeStatisticsSection/index";
 import NewTransactionSection from "@/components/NewTransactionSection/index";
 import GoalCard from "@/components/GoalsSection/GoalCard";
+import LoanCard from "@/components/LoanCard";
 export default {
   name: "Dashboard",
   components: {
@@ -31,5 +32,6 @@ export default {
     OutcomeStatisticsSection,
     NewTransactionSection,
     GoalCard,
+    LoanCard,
   },
 };

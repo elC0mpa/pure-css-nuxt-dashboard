@@ -1,0 +1,16 @@
+.loan-card {
+  background-image: linear-gradient(
+    to left bottom,
+    rgba(red, 0.795),
+    rgba(orangered, 0.795)
+  );
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  @include card;
+  @include card-hover;
+  > p {
+    color: white;
+  }
+}

@@ -10,5 +10,11 @@
   }
   &__second-column-horizontal-sections {
     display: flex;
+    > section.new-transaction-section {
+      flex: 0 0 70%;
+    }
+    > div.loan-card {
+      flex-grow: 1;
+    }
   }
 }

@@ -5,7 +5,8 @@
   td {
     border-bottom: 1px solid lightgray;
     border-collapse: collapse;
-    padding: 5px 0;
+    padding: 2px 0;
+    flex-grow: 1;
   }
   > tr > th:last-child {
     text-align: right;
@@ -17,5 +18,17 @@
   }
   > tr > td:last-child {
     text-align: right;
+  }
+  > tr > td:first-child {
+    > div {
+      margin-right: 3px;
+      svg {
+        width: 10px;
+        height: 10px;
+      }
+    }
+    > * {
+      display: inline;
+    }
   }
 }

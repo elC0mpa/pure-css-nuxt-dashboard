@@ -7,7 +7,12 @@
       <th class="secondary-info text-align-right">Amount</th>
     </tr>
     <tr v-for="(transaction, index) in transactions" :key="index">
-      <td class="secondary-info is-bold">{{ transaction.receiver }}</td>
+      <td>
+        <div
+        v-html="transaction.icon"
+      ></div>
+      <p class="secondary-info is-bold">{{ transaction.receiver }}</p>
+      </td>
       <td class="secondary-info">{{ transaction.type }}</td>
       <td class="secondary-info">{{ transaction.date }}</td>
       <td class="secondary-info is-bold is-currency text-align-right">

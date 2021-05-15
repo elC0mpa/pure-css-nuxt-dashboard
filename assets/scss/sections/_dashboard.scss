@@ -1,15 +1,9 @@
 .dashboard {
   display: flex;
   padding: 5px;
-  @include responsive(tablet) {
-    flex-direction: column;
-  }
   &__first-column {
     flex: 0 0 50%;
     margin-right: 0.5rem;
-    @include responsive(tablet) {
-      margin-right: 0;
-    }
   }
   &__second-column {
     flex-grow: 1;

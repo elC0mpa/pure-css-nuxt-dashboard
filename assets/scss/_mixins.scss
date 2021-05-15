@@ -11,13 +11,13 @@
       @content;
     }
   }
-  @if $breakpoint == tablet {
-    @media (max-width: 850px) {
+  @if $breakpoint == tab-portrait {
+    @media (max-width: 900px) {
       @content;
     }
   }
-  @if $breakpoint == laptop {
-    @media (max-width: 1024px) {
+  @if $breakpoint == largest-bp {
+    @media (max-width: 1230px) {
       @content;
     }
   }

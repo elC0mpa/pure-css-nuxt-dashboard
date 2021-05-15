@@ -12,6 +12,8 @@
 import HeaderComponent from "@/components/Header";
 import SideBar from "@/components/SideBar";
 import Graph from "@/assets/icons/area-graph.svg?raw";
+import WiFi from "@/assets/icons/signal.svg?raw";
+import Travel from "@/assets/icons/aircraft.svg?raw";
 export default {
   components: {
     HeaderComponent,
@@ -23,6 +25,14 @@ export default {
         {
           text: "Overview",
           icon: Graph,
+        },
+        {
+          text: "Wifi",
+          icon: WiFi,
+        },
+        {
+          text: "Travels",
+          icon: Travel,
         },
       ],
     };

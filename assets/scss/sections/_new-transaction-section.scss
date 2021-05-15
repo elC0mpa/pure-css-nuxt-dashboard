@@ -19,6 +19,9 @@
     align-items: center;
     justify-content: center;
     flex-grow: 1;
+    @include responsive (largest-bp){
+      flex-grow: 0;
+    }
     > * {
       margin-top: auto;
     }
@@ -29,19 +32,24 @@
   }
   &__actions-container {
     display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: stretch;
+    @include responsive (largest-bp){
+      flex-direction: column;
+    }
     > button {
       border-radius: 15px;
       padding: 0 7px;
+      min-height: 30px;
+      @include responsive (largest-bp){
+        margin-top: 3px;
+      }
     }
   }
   &__number-input {
     border: 1.8px solid transparentize($color: blue, $amount: 0.7);
     height: 30px;
     border-radius: 0.5rem;
-    margin-right: 5px;
     &:focus {
       outline: none;
       border: 1.8px solid transparentize($color: blue, $amount: 0.3);

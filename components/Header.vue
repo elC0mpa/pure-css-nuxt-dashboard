@@ -17,7 +17,7 @@
       </div>
       <div class="user-nav__user">
         <img src="@/assets/imgs/user.jpeg" alt="" class="user-nav__user-photo">
-        <span class="user-nav__user-name">José Gabriel <br /> Admin Account</span>
+        <span class="user-nav__user-name">Gabriel <br />Admin</span>
       </div>
     </nav>
   </header>

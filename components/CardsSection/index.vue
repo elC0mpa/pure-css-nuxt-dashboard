@@ -13,6 +13,7 @@
             :holder="creditCard.holder"
             :expire-date="creditCard.expireDate"
             :card-id="creditCard.cardId"
+            :is-enabled="cardEnabled"
           ></credit-card>
         </slide>
       </carousel>

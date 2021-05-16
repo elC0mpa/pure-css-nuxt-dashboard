@@ -11,6 +11,13 @@
   min-height: 160px;
   width: 99%;
   padding: 5px;
+  &.is-disabled {
+    background-image: linear-gradient(
+    to left bottom,
+    lightgray,
+    gray
+  );
+  }
   &__title {
     font-size: 1rem;
     font-weight: 700;

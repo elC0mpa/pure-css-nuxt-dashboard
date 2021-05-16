@@ -1,5 +1,5 @@
 <template>
-  <div class="credit-card">
+  <div class="credit-card" :class="{ 'is-disabled': !isEnabled }">
     <div class="credit-card__header">
       <p class="credit-card__title">cloudcash</p>
       <p class="credit-card__info">PREMIUM ACCOUNT</p>
@@ -45,6 +45,10 @@ export default {
     },
     cardId: {
       type: Number,
+      required: true,
+    },
+    isEnabled: {
+      type: Boolean,
       required: true,
     },
   },

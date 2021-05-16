@@ -3,7 +3,10 @@
     to left bottom,
     $gradient-tertiary-light,
     $gradient-tertiary-dark
-  );
+  ), url('~/assets/imgs/cloudcash.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   margin-left: 1rem;
   display: flex;
   flex-direction: column;

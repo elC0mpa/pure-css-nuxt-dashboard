@@ -6,7 +6,10 @@
     to left bottom,
     $gradient-primary-light,
     $gradient-primary-dark
-  );
+  ), url('~/assets/imgs/cloudcash.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   border-radius: 1rem;
   min-height: 160px;
   width: 99%;

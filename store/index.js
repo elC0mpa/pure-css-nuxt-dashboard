@@ -118,6 +118,13 @@ export const state = () => ({
         icon: Controller,
         iconClass: "is-secondary",
       },
+      {
+        text: "Electronics",
+        date: "15/04/2019",
+        balance: 120,
+        icon: Battery,
+        iconClass: "is-primary",
+      },
     ],
     [
       {
@@ -140,6 +147,13 @@ export const state = () => ({
         balance: 300,
         icon: Brush,
         iconClass: "is-tertiary",
+      },
+      {
+        text: "Communications",
+        date: "10/11/2020",
+        balance: 150,
+        icon: Signal,
+        iconClass: "is-primary",
       },
     ],
   ],

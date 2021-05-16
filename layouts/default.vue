@@ -25,6 +25,7 @@ export default {
         {
           text: "Overview",
           icon: Graph,
+          isSelected: true,
         },
         {
           text: "Wifi",

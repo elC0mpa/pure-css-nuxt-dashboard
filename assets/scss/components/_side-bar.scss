@@ -24,6 +24,19 @@
     @include responsive(large-bp) {
       flex-grow: 1;
     }
+    &--active {
+      > a.side-nav__link {
+        color: white;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        // border-radius: 10px;
+        background-image: linear-gradient(
+          to right,
+          $gradient-primary-dark,
+          $gradient-primary-light
+        );
+      }
+    }
   }
 
   &__item::before {
@@ -49,9 +62,8 @@
     text-decoration: none;
     text-transform: uppercase;
     display: block;
-    padding: 1rem 2rem;
+    padding: .5rem 2rem;
     position: relative;
-    z-index: 10;
     @include responsive(small-bp) {
       text-transform: none;
     }

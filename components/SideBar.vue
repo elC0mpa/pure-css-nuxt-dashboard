@@ -4,7 +4,8 @@
       <li
         v-for="(item, index) in items"
         :key="index"
-        class="side-nav__item side-nav__item--active"
+        class="side-nav__item"
+        :class="{'side-nav__item--active': item.isSelected}"
       >
         <a href="#" class="side-nav__link">
           <div class="side-nav__icon" v-html="item.icon"></div>

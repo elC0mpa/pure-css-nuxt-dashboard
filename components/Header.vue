@@ -1,5 +1,6 @@
 <template>
   <header class="header">
+    <img src="@/assets/imgs/cloudcash.png" alt="CloudCash" class="user-nav__user-photo">
     <div class="title-wrapper">
         <p class="title">Weekly sumup</p>
         <p class="info">Get summary of your weekly online transactions here </p>

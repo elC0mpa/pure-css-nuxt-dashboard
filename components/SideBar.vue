@@ -15,7 +15,7 @@
 
     <div class="photo">
       <img src="@/assets/imgs/cloudcash.png" alt="CloudCash" class="user-nav__user-photo">
-      <span class="user-nav__user-name secondary-info">Give your money awesome space in the cloud</span>
+      <span class="secondary-info">Give your money awesome space in the cloud</span>
     </div>
   </nav>
 </template>

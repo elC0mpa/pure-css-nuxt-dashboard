@@ -6,20 +6,20 @@
     </div>
     <div class="credit-card__number">
       <ul>
-        <li>4351</li>
+        <li>{{ firstSection }}</li>
         <li>****</li>
         <li>****</li>
-        <li>0104</li>
+        <li>{{ lastSection }}</li>
       </ul>
     </div>
     <div class="credit-card__footer">
       <div>
         <p class="credit-card__info">Card holder</p>
-        <p class="credit-card__title">Carlos García</p>
+        <p class="credit-card__title">{{ holder }}</p>
       </div>
       <div>
         <p class="credit-card__info">Expire date</p>
-        <p class="credit-card__title">06/21</p>
+        <p class="credit-card__title">{{ expireDate }}</p>
       </div>
     </div>
   </div>
@@ -27,9 +27,31 @@
 
 <script>
 export default {
-  name: 'CreditCard',
+  name: "CreditCard",
   data() {
-    return {};
+    return {
+      firstSection: "",
+      lastSection: "",
+    };
+  },
+  props: {
+    holder: {
+      type: String,
+      required: true,
+    },
+    expireDate: {
+      type: String,
+      required: true,
+    },
+    cardId: {
+      type: Number,
+      required: true,
+    },
+  },
+  created() {
+    const idString = this.cardId.toString();
+    this.firstSection = idString.substring(0, 4);
+    this.lastSection = idString.substring(idString.length - 4, idString.length);
   },
 };
 </script>

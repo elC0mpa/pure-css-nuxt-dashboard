@@ -1,6 +1,7 @@
 .cards-section {
   @include card;
   &__top-container {
+    margin-left: 5px;
     display: flex;
     > div:first-child {
       width: 65%;
@@ -14,6 +15,7 @@
     display: flex;
     margin-top: 10px;
     justify-content: space-between;
+    margin-left: 5px;
     > div:first-child {
       flex: 0 0 65%;
     }

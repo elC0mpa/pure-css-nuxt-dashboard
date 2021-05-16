@@ -2,7 +2,7 @@
   <section class="cards-section">
     <p class="card-title">Cards</p>
     <div class="cards-section__top-container">
-      <carousel :per-page="1" :navigationEnabled="true" :paginationEnabled="false">
+      <carousel :per-page="1" :navigationEnabled="true" :paginationEnabled="false" :navigationClickTargetSize="3">
         <slide>
           <credit-card></credit-card>
         </slide>

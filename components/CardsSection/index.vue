@@ -2,7 +2,14 @@
   <section class="cards-section">
     <p class="card-title">Cards</p>
     <div class="cards-section__top-container">
-      <credit-card></credit-card>
+      <carousel :per-page="1" :navigationEnabled="true" :paginationEnabled="false">
+        <slide>
+          <credit-card></credit-card>
+        </slide>
+        <slide>
+          <credit-card></credit-card>
+        </slide>
+      </carousel>
       <balances></balances>
     </div>
     <div class="cards-section__bottom-container">
@@ -20,6 +27,8 @@ import CreditCard from "@/components/CardsSection/CreditCard";
 import Balances from "@/components/CardsSection/Balances";
 import ProgressBar from "@/components/ProgressBar";
 import SwitchComponent from "@/components/CardsSection/SwitchComponent";
+import { Carousel, Slide } from "vue-carousel";
+
 export default {
   name: "CardsSection",
   components: {
@@ -27,6 +36,8 @@ export default {
     Balances,
     ProgressBar,
     SwitchComponent,
+    Carousel, 
+    Slide
   },
 };
 </script>

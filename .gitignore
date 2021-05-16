@@ -93,3 +93,4 @@ sw.*
 .nvmrc
 
 nuxt-dist
+package-lock.json

@@ -86,8 +86,14 @@
   }
 }
 
-.legal {
+.photo {
   @include responsive(large-bp) {
     display: none;
+  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  > span {
+    text-align: center;
   }
 }

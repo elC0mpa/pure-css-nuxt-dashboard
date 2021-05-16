@@ -13,8 +13,9 @@
       </li>
     </ul>
 
-    <div class="legal">
-      &copy; 2017 by trillo. All rights reserved.
+    <div class="photo">
+      <img src="@/assets/imgs/cloudcash.png" alt="CloudCash" class="user-nav__user-photo">
+      <span class="user-nav__user-name secondary-info">Give your money awesome space in the cloud</span>
     </div>
   </nav>
 </template>

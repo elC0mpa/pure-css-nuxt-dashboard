@@ -1,5 +1,5 @@
 {
-  "name": "gsi-dashboard",
+  "name": "pure-css-nuxt-dashboard",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -7,7 +7,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "deploy": "gh-pages -d dist --branch gh-pages"
+    "deploy": "gh-pages -d dist --branch gh-pages --dotfiles"
   },
   "dependencies": {
     "core-js": "^3.9.1",

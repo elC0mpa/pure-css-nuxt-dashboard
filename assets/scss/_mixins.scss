@@ -1,9 +1,5 @@
 // mixin created to manage responsive design
 // desktop first approach
-// width > 1200 px: normal styles
-// width > 900 px: tablet landscape
-// width > 600 px: tablet portrait
-// width <= 600 px: mobile
 
 @mixin responsive($breakpoint) {
   @if $breakpoint == smallest-bp {

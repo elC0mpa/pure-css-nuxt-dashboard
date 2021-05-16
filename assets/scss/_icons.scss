@@ -13,6 +13,11 @@
   fill: $color-primary;
 }
 
+.disabled-box-icon {
+  background-color: transparentize($color-disabled, $amount: 0.8);
+  fill: $color-disabled;
+}
+
 .is-primary {
   fill: $color-primary;
 }

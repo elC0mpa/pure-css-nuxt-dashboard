@@ -102,21 +102,21 @@ export const state = () => ({
         date: "20/01/2019",
         balance: 50,
         icon: Signal,
-        iconClass: 'is-primary',
+        iconClass: "is-primary",
       },
       {
         text: "Renovation",
         date: "20/05/2019",
         balance: 200,
         icon: Brush,
-        iconClass: 'is-tertiary'
+        iconClass: "is-tertiary",
       },
       {
         text: "XBox",
         date: "20/07/2019",
         balance: 550,
         icon: Controller,
-        iconClass: 'is-secondary'
+        iconClass: "is-secondary",
       },
     ],
     [
@@ -125,23 +125,71 @@ export const state = () => ({
         date: "10/07/2020",
         balance: 70,
         icon: Battery,
-        iconClass: 'is-primary',
+        iconClass: "is-primary",
       },
       {
         text: "Travels",
         date: "05/09/2020",
         balance: 287,
         icon: Aircraft,
-        iconClass: 'is-secondary'
+        iconClass: "is-secondary",
       },
       {
         text: "Shopping",
         date: "30/10/2020",
         balance: 300,
         icon: Brush,
-        iconClass: 'is-tertiary'
+        iconClass: "is-tertiary",
       },
     ],
+  ],
+  OUTCOME_STATISTICS: [
+    [
+      {
+        icon: Cart,
+        width: 50,
+        iconClass: "tertiary-box-icon",
+        progressBarColor: "tertiary",
+        progressBarText: "Shopping",
+      },
+      {
+        icon: Controller,
+        width: 25,
+        iconClass: "secondary-box-icon",
+        progressBarColor: "secondary",
+        progressBarText: "Electronics",
+      },
+      {
+        icon: Aircraft,
+        width: 40,
+        iconClass: "primary-box-icon",
+        progressBarColor: "primary",
+        progressBarText: "Travels",
+      },
+    ],
+    [
+      {
+        icon: Battery,
+        width: 39,
+        iconClass: "tertiary-box-icon",
+        progressBarColor: "tertiary",
+        progressBarText: "Electronics",
+      },
+      {
+        icon: Brush,
+        width: 40,
+        iconClass: "primary-box-icon",
+        progressBarColor: "primary",
+        progressBarText: "Painting",
+      },
+      {
+        icon: Controller,
+        width: 87,
+        iconClass: "secondary-box-icon",
+        progressBarColor: "secondary",
+        progressBarText: "Video Games",
+      },
+    ]
   ],
   ACTIVE_CARD: 0,
   IS_ENABLED: false,
@@ -165,6 +213,9 @@ export const getters = {
   },
   goals: (state) => {
     return state.GOALS[state.ACTIVE_CARD];
+  },
+  outcomeStatistics: (state) => {
+    return state.OUTCOME_STATISTICS[state.ACTIVE_CARD];
   },
 };
 

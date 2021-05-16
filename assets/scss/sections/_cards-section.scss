@@ -3,9 +3,10 @@
   &__top-container {
     display: flex;
     > div:first-child {
-      flex: 0 0 65%;
+      width: 65%;
     }
     > div.balances {
+      // flex: 0 0 65%;
       flex-grow: 1;
     }
   }

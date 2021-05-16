@@ -10,7 +10,7 @@
         v-html="icon"
         :class="iconClass"
       ></div>
-      <div class="goal-card__bottom-container--id">{{ text }}</div>
+      <div class="goal-card__bottom-container--id is-bold">{{ text }}</div>
     </div>
   </div>
 </template>

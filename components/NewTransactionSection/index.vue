@@ -8,7 +8,7 @@
         class="new-transaction-section__avatar-wrapper"
       >
         <img
-          src="user.jpeg"
+          :src="require(`../../assets/imgs/${avatar.filename}`)"
           alt=""
           class="new-transaction-section__user-photo"
         />
@@ -33,26 +33,10 @@
 <script>
 export default {
   name: "NewTransactionSection",
-  data() {
-    return {
-      avatars: [
-        {
-          name: "José",
-        },
-        {
-          name: "Adrian",
-        },
-        {
-          name: "Mercedes",
-        },
-        {
-          name: "Carlos",
-        },
-        {
-          name: "Compa",
-        },
-      ],
-    };
+  computed: {
+    avatars() {
+      return this.$store.getters.newTransactions;
+    }
   },
 };
 </script>

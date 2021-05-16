@@ -191,6 +191,28 @@ export const state = () => ({
       },
     ]
   ],
+  NEW_TRANSACTIONS: [
+    {
+      filename: 'user.jpeg',
+      name: 'Gabriel'
+    },
+    {
+      filename: 'user1.jpeg',
+      name: 'Roxana'
+    },
+    {
+      filename: 'user1.jpeg',
+      name: 'María'
+    },
+    {
+      filename: 'user1.jpeg',
+      name: 'Carlos'
+    },
+    {
+      filename: 'user.jpeg',
+      name: 'Luiso'
+    }
+  ],
   ACTIVE_CARD: 0,
   IS_ENABLED: false,
 });
@@ -216,6 +238,9 @@ export const getters = {
   },
   outcomeStatistics: (state) => {
     return state.OUTCOME_STATISTICS[state.ACTIVE_CARD];
+  },
+  newTransactions: (state) => {
+    return state.NEW_TRANSACTIONS;
   },
 };
 

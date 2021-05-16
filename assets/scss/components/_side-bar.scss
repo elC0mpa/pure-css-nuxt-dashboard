@@ -35,14 +35,13 @@
     width: 3px !important;
     background-color: $color-primary;
     transform: scaleY(0);
-    transition: transform .8s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s,
+    transition: transform 0.8s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s,
       background-color 0.1s;
   }
 
   &__item:hover::before {
     transform: scaleY(1);
   }
-
 
   &__link:link,
   &__link:visited {
@@ -53,6 +52,9 @@
     padding: 1rem 2rem;
     position: relative;
     z-index: 10;
+    @include responsive(small-bp) {
+      text-transform: none;
+    }
 
     display: flex;
     align-items: center;
@@ -67,7 +69,7 @@
       padding: 1.5rem 0.5rem;
     }
     @include responsive(large-bp) {
-      padding: .3rem 2rem;
+      padding: 0.3rem 2rem;
     }
   }
 

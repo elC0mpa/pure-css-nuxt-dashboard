@@ -220,7 +220,7 @@ export const state = () => ({
     },
     {
       filename: 'user1.jpeg',
-      name: 'Carlos'
+      name: 'Ana'
     },
     {
       filename: 'user.jpeg',

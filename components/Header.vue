@@ -15,7 +15,7 @@
         <span class="user-nav__notification">13</span>
       </div>
       <div class="user-nav__user">
-        <img src="user.jpeg" alt="" class="user-nav__user-photo">
+        <img src="@/assets/imgs/user.jpeg" alt="" class="user-nav__user-photo">
         <span class="user-nav__user-name">José Gabriel <br /> Admin Account</span>
       </div>
     </nav>

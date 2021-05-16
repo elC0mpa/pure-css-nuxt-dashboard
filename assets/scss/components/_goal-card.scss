@@ -21,6 +21,7 @@
         align-items: flex-start;
         &--icon {
             fill: $color-primary;
+            transition: fill .5s;
         }
     }
 }

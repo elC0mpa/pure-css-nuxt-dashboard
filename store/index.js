@@ -2,6 +2,9 @@ import Cart from "@/assets/icons/shopping-cart.svg?raw";
 import Controller from "@/assets/icons/game-controller.svg?raw";
 import Aircraft from "@/assets/icons/aircraft.svg?raw";
 import Battery from "@/assets/icons/battery.svg?raw";
+import Signal from "@/assets/icons/signal.svg?raw";
+import Brush from "@/assets/icons/round-brush.svg?raw";
+
 export const state = () => ({
   CARDS_DATA: [
     {
@@ -92,6 +95,54 @@ export const state = () => ({
       },
     ],
   ],
+  GOALS: [
+    [
+      {
+        text: "Communications",
+        date: "20/01/2019",
+        balance: 50,
+        icon: Signal,
+        iconClass: 'is-primary',
+      },
+      {
+        text: "Renovation",
+        date: "20/05/2019",
+        balance: 200,
+        icon: Brush,
+        iconClass: 'is-tertiary'
+      },
+      {
+        text: "XBox",
+        date: "20/07/2019",
+        balance: 550,
+        icon: Controller,
+        iconClass: 'is-secondary'
+      },
+    ],
+    [
+      {
+        text: "Electronics",
+        date: "10/07/2020",
+        balance: 70,
+        icon: Battery,
+        iconClass: 'is-primary',
+      },
+      {
+        text: "Travels",
+        date: "05/09/2020",
+        balance: 287,
+        icon: Aircraft,
+        iconClass: 'is-secondary'
+      },
+      {
+        text: "Shopping",
+        date: "30/10/2020",
+        balance: 300,
+        icon: Brush,
+        iconClass: 'is-tertiary'
+      },
+    ],
+  ],
   ACTIVE_CARD: 0,
   IS_ENABLED: false,
 });
@@ -111,6 +162,9 @@ export const getters = {
   },
   transactionsHistory: (state) => {
     return state.TRANSACTIONS_HISTORIES[state.ACTIVE_CARD];
+  },
+  goals: (state) => {
+    return state.GOALS[state.ACTIVE_CARD];
   },
 };
 

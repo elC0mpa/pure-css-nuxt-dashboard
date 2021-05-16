@@ -7,13 +7,14 @@
         :navigationEnabled="true"
         :paginationEnabled="false"
         :navigationClickTargetSize="3"
+        @navigation-click="changeData"
       >
         <slide v-for="(creditCard, index) in creditCards" :key="index">
           <credit-card
             :holder="creditCard.holder"
             :expire-date="creditCard.expireDate"
             :card-id="creditCard.cardId"
-            :is-enabled="cardEnabled"
+            :is-enabled="cardEnabledComputed"
           ></credit-card>
         </slide>
       </carousel>
@@ -23,8 +24,14 @@
       <progress-bar
         low-left-text="Weekly payment limit"
         low-right-text="$350.60 / $4000"
+        :width="$store.getters.weeklyPayment"
+        color="primary"
       ></progress-bar>
-      <switch-component v-model="cardEnabled" trueText="Enabled card" falseText="Disabled card"></switch-component>
+      <switch-component
+        v-model="cardEnabledComputed"
+        trueText="Enabled card"
+        falseText="Disabled card"
+      ></switch-component>
     </div>
   </section>
 </template>
@@ -48,20 +55,23 @@ export default {
   },
   data() {
     return {
-      creditCards: [
-        {
-          holder: "Maria Benitez",
-          expireDate: "06/25",
-          cardId: 1234454545451234,
-        },
-        {
-          holder: "Alberto García",
-          expireDate: "08/25",
-          cardId: 5634454545459035,
-        },
-      ],
-      cardEnabled: false
+      creditCards: this.$store.getters.cardsData,
     };
+  },
+  methods: {
+    changeData(evt) {
+      this.$store.commit("updateActiveCard", evt);
+    },
+  },
+  computed: {
+    cardEnabledComputed: {
+      get() {
+        return this.$store.getters.isEnabled;
+      },
+      set(value) {
+        return this.$store.commit("updateIsEnabled", value);
+      },
+    },
   },
 };
 </script>

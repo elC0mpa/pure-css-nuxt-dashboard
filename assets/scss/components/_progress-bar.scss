@@ -28,6 +28,9 @@
     &.is-tertiary {
       background-color: $color-tertiary;
     }
+    &.is-disabled {
+      background-color: $color-disabled;
+    }
     &:after {
       content: "";
       position: absolute;

@@ -7,6 +7,7 @@
           'is-primary': color === 'primary',
           'is-secondary': color === 'secondary',
           'is-tertiary': color === 'tertiary',
+          'is-disabled': color === 'disabled',
         }"
       ></span>
     </div>

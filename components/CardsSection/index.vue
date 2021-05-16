@@ -25,7 +25,7 @@
         low-left-text="Weekly payment limit"
         low-right-text="$350.60 / $4000"
         :width="$store.getters.weeklyPayment"
-        color="primary"
+        :color="$store.getters.isEnabled ? 'primary' : 'disabled'"
       ></progress-bar>
       <switch-component
         v-model="cardEnabledComputed"

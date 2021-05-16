@@ -1,6 +1,9 @@
 .header {
   > img {
     margin-left: 4rem;
+    @include responsive(large-bp) {
+      margin-left: 0;
+    }
   }
   display: flex;
   justify-content: space-between;

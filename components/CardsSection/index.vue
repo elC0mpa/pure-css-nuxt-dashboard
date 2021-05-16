@@ -2,12 +2,18 @@
   <section class="cards-section">
     <p class="card-title">Cards</p>
     <div class="cards-section__top-container">
-      <carousel :per-page="1" :navigationEnabled="true" :paginationEnabled="false" :navigationClickTargetSize="3">
-        <slide>
-          <credit-card></credit-card>
-        </slide>
-        <slide>
-          <credit-card></credit-card>
+      <carousel
+        :per-page="1"
+        :navigationEnabled="true"
+        :paginationEnabled="false"
+        :navigationClickTargetSize="3"
+      >
+        <slide v-for="(creditCard, index) in creditCards" :key="index">
+          <credit-card
+            :holder="creditCard.holder"
+            :expire-date="creditCard.expireDate"
+            :card-id="creditCard.cardId"
+          ></credit-card>
         </slide>
       </carousel>
       <balances></balances>
@@ -36,8 +42,24 @@ export default {
     Balances,
     ProgressBar,
     SwitchComponent,
-    Carousel, 
-    Slide
+    Carousel,
+    Slide,
+  },
+  data() {
+    return {
+      creditCards: [
+        {
+          holder: "Maria Benitez",
+          expireDate: "06/25",
+          cardId: 1234454545451234,
+        },
+        {
+          holder: "Alberto García",
+          expireDate: "08/25",
+          cardId: 5634454545459035,
+        },
+      ],
+    };
   },
 };
 </script>

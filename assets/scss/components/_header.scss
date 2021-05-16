@@ -4,18 +4,31 @@
     @include responsive(large-bp) {
       margin-left: 0;
     }
+    @include responsive(medium-bp) {
+      position: absolute;
+      top: 0;
+      left: 10px;
+    }
+    @include responsive(small-bp) {
+      position: absolute;
+      top: initial;
+      left: initial;
+      bottom: 25px;
+      right: 20px;
+    }
   }
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid lightgray;
-  @include responsive(small-bp) {
+  position: relative;
+  @include responsive(medium-bp) {
     flex-direction: column-reverse;
   }
 }
 
 .title-wrapper {
-  @include responsive(small-bp) {
+  @include responsive(medium-bp) {
     align-self: flex-start;
   }
 }
@@ -58,7 +71,7 @@
     height: 3.75rem;
     border-radius: 50%;
   }
-  @include responsive(small-bp) {
+  @include responsive(medium-bp) {
     align-self: flex-end;
   }
 }

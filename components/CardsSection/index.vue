@@ -23,7 +23,7 @@
         low-left-text="Weekly payment limit"
         low-right-text="$350.60 / $4000"
       ></progress-bar>
-      <switch-component></switch-component>
+      <switch-component v-model="cardEnabled" trueText="Enabled card" falseText="Disabled card"></switch-component>
     </div>
   </section>
 </template>
@@ -59,6 +59,7 @@ export default {
           cardId: 5634454545459035,
         },
       ],
+      cardEnabled: false
     };
   },
 };

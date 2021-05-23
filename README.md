@@ -1,6 +1,6 @@
 # GSI-Dashboard
 
-This is a practical exercise that must be done in order to complete the apllication process to [GSoft Innovation](https://www.gsoftinnovation.com/) company. The goal was to reproduce the next dashboard:
+This is a practical exercise that must be done in order to complete the aplication process to [GSoft Innovation](https://www.gsoftinnovation.com/) company. The goal was to reproduce the next dashboard:
 
 ![goal](goal.jpg)
 

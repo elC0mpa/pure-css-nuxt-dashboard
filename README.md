@@ -1,20 +1,9 @@
-# gsi-dashboard
+# GSI-Dashboard
 
-## Build Setup
+This is a practical exercise that must be done in order to complete the apllication process to [GSoft Innovation](https://www.gsoftinnovation.com/) company. The goal was to reproduce the next dashboard:
 
-```bash
-# install dependencies
-$ npm install
+![goal](/home/elC0mpa/Documents/GitHub/gsi-dashboard/goal.jpg)
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+The main objective was to demonstrate great CSS skills, thats why this Dashboard was built without using any components library. Only an npm package was installed in order to use the carousel component.
 
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+Nuxt framework was used to as a frontend framework 
